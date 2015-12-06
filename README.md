@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/browne0/Tipster/blob/master/Tipster.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/browne0/Tipster/blob/master/codepath-tipsCalculator-final/Tipster_final.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
