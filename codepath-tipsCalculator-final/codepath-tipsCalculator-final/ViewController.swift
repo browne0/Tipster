@@ -65,8 +65,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-<<<<<<< HEAD
 
     @IBAction func onEditingChanged(sender: AnyObject) {
         
@@ -112,9 +110,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
-=======
-
-    @IBAction func onEditingChanged(sender: AnyObject) {
+    func onEditingChanged(sender: AnyObject) {
         
         if (billField.text != "")
         {
@@ -144,28 +140,24 @@ class ViewController: UIViewController {
         // function goes here
         calculate()
     }
-    @IBAction func onTap(sender: AnyObject) {
+    func onTap(sender: AnyObject) {
         if (billField.text == "")
         {
             return
-        }
-        else
-        {
+        } else {
             view.endEditing(true)
         }
     }
     
-    override func viewWillAppear(animated: Bool) {
+    func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
->>>>>>> a8409f5ec9c4268c0159daa0d576adb94aef60e9
         let defaults = NSUserDefaults.standardUserDefaults()
         if (defaults.objectForKey("SaveTipAmount") != nil)
         {
             tipControls.selectedSegmentIndex = defaults.integerForKey("SaveTipAmount")
             calculate()
         }
-<<<<<<< HEAD
         
         if (defaults.objectForKey("billAmt") != nil)
         {
@@ -176,7 +168,7 @@ class ViewController: UIViewController {
         
     }
     
-    override func viewDidDisappear(animated: Bool) {
+   func viewDidDisappear(animated: Bool) {
         let time1 = NSDate(timeIntervalSinceNow: 3600)
         let time2 = NSDate()
         
@@ -187,9 +179,9 @@ class ViewController: UIViewController {
             defaults.setObject(billField.text, forKey: "billAmt")
             defaults.synchronize()
         }
-=======
->>>>>>> a8409f5ec9c4268c0159daa0d576adb94aef60e9
     }
+
+}
 
 }
 

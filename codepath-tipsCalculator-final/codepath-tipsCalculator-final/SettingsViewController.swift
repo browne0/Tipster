@@ -19,28 +19,19 @@ class SettingsViewController: UIViewController {
         if (tipControl.selectedSegmentIndex == 0)
         {
             defaults.setInteger(0, forKey: "SaveTipAmount")
-<<<<<<< HEAD
             defaults.synchronize()
-=======
->>>>>>> a8409f5ec9c4268c0159daa0d576adb94aef60e9
         }
         
         else if (tipControl.selectedSegmentIndex == 1)
         {
             defaults.setInteger(1, forKey: "SaveTipAmount")
-<<<<<<< HEAD
             defaults.synchronize()
-=======
->>>>>>> a8409f5ec9c4268c0159daa0d576adb94aef60e9
         }
         
         else if (tipControl.selectedSegmentIndex == 2)
         {
             defaults.setInteger(2, forKey: "SaveTipAmount")
-<<<<<<< HEAD
             defaults.synchronize()
-=======
->>>>>>> a8409f5ec9c4268c0159daa0d576adb94aef60e9
         }
         
     }
